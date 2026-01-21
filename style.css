@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4E342E;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3E2723;
+}
+
+/* Animation for buttons */
+.btn-hover {
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+.btn-hover:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Pulse animation for CTA */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Custom styles for sections */
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .text-4xl {
+        font-size: 2rem;
+    }
+    .text-3xl {
+        font-size: 1.75rem;
+    }
+    .text-2xl {
+        font-size: 1.5rem;
+    }
+}
